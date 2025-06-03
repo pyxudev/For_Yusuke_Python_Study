@@ -1,4 +1,5 @@
 <h1>Python Study Memo</h1>
+
 - String ==> Text str "Hello" "test" 文字列
 - Int ==> Integer int 123 456  整数
 - Float ==>  Float 123.45  456.78  小数
