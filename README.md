@@ -1,4 +1,5 @@
 <h1>Python Study Memo</h1>
+<h2>Type 型 6/3 </h2>
 
 - String ==> Text str "Hello" "test" 文字列
 - Int ==> Integer int 123 456  整数
@@ -60,3 +61,48 @@ b = 2
 print(test(b))
 #  2
 ```
+
+<h2>デバッグ 6/17</h2>
+
+```python
+a = 1
+b = "test"
+print(a + b)
+```
+
+実行結果
+```
+Traceback (most recent call last):
+  File "C:\Users\sxu\Desktop\Test\Python Tests\PythonTestScript.py", line 4, in <module>
+    print(a + b)
+          ~~^~~
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+#### 大事なライン：
+```
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+エラーの種類を特定
+
+```
+line 4, in <module>
+    print(a + b)
+```
+エラーが発生したラインを特定
+
+#### キーワード：
+- Error
+- Exception == 例外
+
+例外処理 `try-except`
+```python
+try:
+    a = 1
+    b = "test"
+    print(a + b)
+except TypeError as e:
+    print(f"TypeError: {e}")
+```
+
+動作解説： `try` 内で起きた例外を `except` 内で一回格納し、`TypeError` に当てはまるものを変数 `e` として扱って以降の処理で扱う
