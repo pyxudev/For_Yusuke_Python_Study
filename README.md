@@ -63,7 +63,7 @@ print(test(b))
 ```
 
 <h2>デバッグ 6/17</h2>
-
+エラーが発生するコード例
 ```python
 a = 1
 b = "test"
@@ -105,4 +105,5 @@ except TypeError as e:
     print(f"TypeError: {e}")
 ```
 
-動作解説： `try` 内で起きた例外を `except` 内で一回格納し、`TypeError` に当てはまるものを変数 `e` として扱って以降の処理で扱う
+動作解説： `try` 内で起きた例外を `except` 内で一回格納し、`TypeError` に当てはまるものを変数 `e` として扱って以降の処理で扱う<br>
+この場合、`try` 内のエラー発生したタイミングでは止まらず、処理を継続する
