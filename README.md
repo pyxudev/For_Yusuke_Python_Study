@@ -64,6 +64,7 @@ print(test(b))
 
 <h2>デバッグ 6/17</h2>
 エラーが発生するコード例
+
 ```python
 a = 1
 b = "test"
